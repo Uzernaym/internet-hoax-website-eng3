@@ -27,6 +27,42 @@ app.get('/', (req, res, next) => {
     res.sendFile(filePath);
 });
 
+app.get('/index2.css', (req, res, next) => {
+
+    /* Get the absolute path of the html file */
+    var filePath = path.join(__dirname, './index2.css')
+
+    /* Sends the html file back to the browser */
+    res.sendFile(filePath);
+});
+
+app.get('/index3.css', (req, res, next) => {
+
+    /* Get the absolute path of the html file */
+    var filePath = path.join(__dirname, './index3.css')
+
+    /* Sends the html file back to the browser */
+    res.sendFile(filePath);
+});
+
+app.get('/index4.css', (req, res, next) => {
+
+    /* Get the absolute path of the html file */
+    var filePath = path.join(__dirname, './index4.css')
+
+    /* Sends the html file back to the browser */
+    res.sendFile(filePath);
+});
+
+app.get('/index5.css', (req, res, next) => {
+
+    /* Get the absolute path of the html file */
+    var filePath = path.join(__dirname, './index5.css')
+
+    /* Sends the html file back to the browser */
+    res.sendFile(filePath);
+});
+
 
 /* Defines what function to all when the server recieves any request from http://localhost:8080 */
 server.on('listening', () => {
