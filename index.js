@@ -18,7 +18,7 @@ var port = process.env.PORT ? parseInt(process.env.PORT) : 8080;
 
 
 /* Defines what function to call when a request comes from the path '/' in http://localhost:8080 */
-app.get('/form', (req, res, next) => {
+app.get('/', (req, res, next) => {
 
     /* Get the absolute path of the html file */
     var filePath = path.join(__dirname, './index.html')
