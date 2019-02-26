@@ -27,6 +27,15 @@ app.get('/', (req, res, next) => {
     res.sendFile(filePath);
 });
 
+app.get('/index.css', (req, res, next) => {
+
+    /* Get the absolute path of the html file */
+    var filePath = path.join(__dirname, './index.css')
+
+    /* Sends the html file back to the browser */
+    res.sendFile(filePath);
+});
+
 app.get('/index2.css', (req, res, next) => {
 
     /* Get the absolute path of the html file */
