@@ -45,6 +45,25 @@ app.get('/modules2', (req, res, next) => {
     res.sendFile(filePath);
 });
 
+app.get('/modules3', (req, res, next) => {
+
+    /* Get the absolute path of the html file */
+    var filePath = path.join(__dirname, './modules3.css')
+
+    /* Sends the html file back to the browser */
+    res.sendFile(filePath);
+});
+
+app.get('/', (req, res, next) => {
+
+    /* Get the absolute path of the html file */
+    var filePath = path.join(__dirname, './modules2.css')
+
+    /* Sends the html file back to the browser */
+    res.sendFile(filePath);
+});
+
+
 
 
 app.get('/test', (req, res, next) => {
