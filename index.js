@@ -54,10 +54,10 @@ app.get('/modules3', (req, res, next) => {
     res.sendFile(filePath);
 });
 
-app.get('/', (req, res, next) => {
+app.get('/images/enwiki.png', (req, res, next) => {
 
     /* Get the absolute path of the html file */
-    var filePath = path.join(__dirname, './modules2.css')
+    var filePath = path.join(__dirname, './images/enwiki.png')
 
     /* Sends the html file back to the browser */
     res.sendFile(filePath);
