@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-modules1",
+      "appliesTo": "css/modules1.css",
+      "type": "launch"
+    }
+  ]
+}

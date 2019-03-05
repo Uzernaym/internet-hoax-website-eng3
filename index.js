@@ -27,28 +27,37 @@ app.get('/', (req, res, next) => {
     res.sendFile(filePath);
 });
 
-app.get('/modules1', (req, res, next) => {
+app.get('/css/modules1', (req, res, next) => {
 
     /* Get the absolute path of the html file */
-    var filePath = path.join(__dirname, './modules1.css')
+    var filePath = path.join(__dirname, './css/modules1.css')
 
     /* Sends the html file back to the browser */
     res.sendFile(filePath);
 });
 
-app.get('/modules2', (req, res, next) => {
+app.get('/css/modules2', (req, res, next) => {
 
     /* Get the absolute path of the html file */
-    var filePath = path.join(__dirname, './modules2.css')
+    var filePath = path.join(__dirname, './css/modules2.css')
 
     /* Sends the html file back to the browser */
     res.sendFile(filePath);
 });
 
-app.get('/modules3', (req, res, next) => {
+app.get('/css/modules3', (req, res, next) => {
 
     /* Get the absolute path of the html file */
-    var filePath = path.join(__dirname, './modules3.css')
+    var filePath = path.join(__dirname, './css/modules3.css')
+
+    /* Sends the html file back to the browser */
+    res.sendFile(filePath);
+});
+
+app.get('/images/wikimedia-button-1.5x.png', (req, res, next) => {
+
+    /* Get the absolute path of the html file */
+    var filePath = path.join(__dirname, './images/wikimedia-button-1.5x.png')
 
     /* Sends the html file back to the browser */
     res.sendFile(filePath);
