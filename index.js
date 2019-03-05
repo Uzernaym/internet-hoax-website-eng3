@@ -72,7 +72,7 @@ app.get('/images/wikimedia-button-1.5x.png', (req, res, next) => {
     res.sendFile(filePath);
 });
 
-app.get('images/project-logos/enwiki.png', (req, res, next) => {
+app.get('/images/enwiki.png', (req, res, next) => {
 
     /* Get the absolute path of the html file */
     var filePath = path.join(__dirname, './images/enwiki.png')
